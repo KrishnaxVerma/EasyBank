@@ -1,0 +1,505 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Public Sans", sans-serif;
+    font-size: 18px;
+}
+
+header {
+    background-color: white;
+    z-index: 10;
+    position: relative;
+}
+
+nav {
+    max-width: 85vw;
+    height: 10vh;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+    font-weight: 400;
+}
+
+nav ul li {
+    opacity: 0.5;
+}
+
+button {
+    font-weight: 700;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 30px;
+    border: 1px solid white;
+    background: linear-gradient(to right,
+            hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+}
+
+button:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+nav ul li:hover {
+    color: black;
+    cursor: pointer;
+    opacity: 1;
+    text-decoration: underline;
+    text-decoration-color: hsl(192, 70%, 51%)
+}
+
+main {
+    background-color: whitesmoke;
+}
+
+.one {
+    margin-left: 7.5vw;
+    height: 70vh;
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+}
+
+.one .left {
+    margin-top: 20vh;
+}
+
+.one .left h1 {
+    font-size: 60px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.one .left div {
+    font-size: 22px;
+    font-weight: 300;
+    margin-bottom: 20px;
+    color: gray;
+}
+
+/* .one .right {
+    overflow-x: hidden; 
+}  */
+
+
+.one .right .img1 {
+    width: 60vw;
+    position: relative;
+    top: -27vh;
+    right: -13vw;
+}
+
+.one .right .img2 {
+    width: 53vw;
+    position: relative;
+    top: -120vh;
+    right: -12vw;
+}
+
+
+.two {
+    background-color: rgb(236, 234, 234);
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.content {
+    max-width: 85vw;
+    padding-left: 7.5vw;
+}
+
+.two .content h1 {
+    font-size: 36px;
+    font-weight: 400;
+    padding-top: 100px;
+}
+
+.two .content div {
+    font-size: 16px;
+    margin-top: 10px;
+    color: gray;
+}
+
+.boxes {
+    display: grid;
+    grid-template-columns: repeat(4, 20vw);
+    padding: 7.5vw 0 10vh 7.5vw;
+    gap: 5px;
+}
+
+.box img {
+    width: 5vw;
+}
+
+.box h2 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.box span {
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+}
+
+.articles {
+    height: 85vh;
+    background-color: aliceblue;
+}
+
+.articles h1 {
+    font-size: 48px;
+    font-weight: 400;
+    padding-top: 10vh;
+    padding-left: 7.5vw;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 20vw);
+    padding: 2.5vw 0 5vh 7.5vw;
+    gap: 5px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background-color: whitesmoke;
+}
+
+.card img {
+    width: 18vw;
+    height: 25vh;
+    border-radius: 5px;
+}
+
+.card h2 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.card span {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.author {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+footer {
+    background-color: hsl(233, 26%, 24%);
+    height: 30vh;
+}
+
+.container .toplogo {
+    filter: invert(1);
+    padding-bottom: 5vh;
+}
+
+.logos img {
+    padding: 5px;
+}
+
+.container {
+    max-width: 80vw;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding-top: 10vh;
+    color: white;
+}
+
+.container ul {
+    list-style: none;
+    font-size: 18px;
+}
+
+.container ul li {
+    padding-bottom: 10px;
+}
+
+.container ul li:hover {
+    cursor: pointer;
+    color: hsl(136, 65%, 51%);
+}
+
+.copy {
+    color: gray;
+    padding-top: 20px;
+}
+
+
+#navButton {
+    display: none;
+}
+
+.hidden {
+    display: none;
+}
+
+#navOptions {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    background: #f9f9f9;
+    border: 1px solid #ccc;
+    padding: 10px;
+
+}
+
+#navOptions ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#navOptions ul li {
+    margin-bottom: 10px;
+}
+
+#navOptions ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+#navOptions ul li a:hover {
+    color: #000;
+}
+
+
+@media screen and (min-width: 1500px) {
+    .one .right .img2 {
+        width: 40vw;
+        position: relative;
+        top: -120vh;
+        right: -25vw;
+    }
+}
+
+@media screen and (max-width:376px) {
+
+    #navButton {
+        display: block;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    #navOptions {
+        width: 80vw;
+        position: absolute;
+        top: 95px;
+        left: 0px;
+        right: 30px;
+        border-radius: 5px;
+        background: #f9f9f9;
+        border: 1px solid #ccc;
+        padding: 10px;
+    }
+
+    #navOptions ul {
+        list-style-type: none;
+        padding: 0;
+        color: black;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hide{
+        display: none;
+    }
+
+    #navOptions ul li {
+        margin-bottom: 10px;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #navOptions ul li a {
+        text-decoration: none;
+        color: #333;
+    }
+
+    #navOptions ul li a:hover {
+        color: #000;
+    }
+
+    .rj {
+        display: none;
+        padding: 0px;
+        font-size: 0px;
+    }
+
+    .one {
+        display: flex;
+        flex-direction: column;
+        margin-left: 7.5vw;
+        height: 80vh;
+    }
+
+    .one .right .img1 {
+        width: 132vw;
+        position: relative;
+        top: -65vh;
+        right: 25vw;
+    }
+
+    .one .right .img2 {
+        width: 81vw;
+        position: relative;
+        top: -122vh;
+        right: 0vw;
+    }
+
+    .one .left {
+        margin-top: 20vh;
+        position: relative;
+        top: 20vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .one .left h1 {
+        font-size: 40px;
+        font-weight: 400;
+        margin-bottom: 15px;
+    }
+
+    .one .left div {
+        font-size: 16px;
+        font-weight: 300;
+        margin-bottom: 20px;
+        color: gray;
+    }
+
+    .two {
+        background-color: rgb(236, 234, 234);
+        height: 185vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .two .content h1 {
+        font-size: 36px;
+        font-weight: 400;
+        padding-top: 34px;
+        justify-content: center;
+        align-items: center;
+        padding-left: 43px;
+    }
+
+    .boxes {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 15px;
+        max-width: -3px;
+        margin-left: -20px;
+    }
+
+    .box {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+    }
+
+    .box img {
+        width: 23vw;
+    }
+
+    .articles {
+        height: 276vh;
+        background-color: aliceblue;
+    }
+
+    .articles h1 {
+        font-size: 48px;
+        font-weight: 300;
+        padding-top: 9vh;
+        padding-left: 11.5vw;
+    }
+
+    .cards {
+        display: flex;
+        flex-direction: column;
+        padding: 4.5vw 4.5vw 5vh 4.5vw;
+        gap: 30px;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        background-color: whitesmoke;
+        text-align: center;
+    }
+
+    .card img {
+        width: 90vw;
+        height: 30vh;
+        border-radius: 5px;
+    }
+
+    .card h2 {
+        font-size: 21px;
+        font-weight: 400;
+    }
+
+    footer {
+        background-color: hsl(233, 26%, 24%);
+        height: 70vh;
+    }
+
+    .container {
+        max-width: 80vw;
+        margin: auto;
+        padding-top: 3vh;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 20px;
+    }
+
+    .container div:nth-of-type(3) {
+        padding-left: 35px;
+    }
+
+    .container button {
+        padding-left: 10vw;
+    }
+
+    .container div:nth-of-type(4) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
