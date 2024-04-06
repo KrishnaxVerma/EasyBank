@@ -137,8 +137,8 @@ main {
 .boxes {
     display: grid;
     grid-template-columns: repeat(4, 20vw);
-    padding: 7.5vw 0 10vh 7.5vw;
-    gap: 5px;
+    padding: 40px;
+    gap: 20px;
 }
 
 .box img {
@@ -160,6 +160,7 @@ main {
     flex-direction: column;
     gap: 30px;
     text-align: center;
+    align-items: center;
 }
 
 .articles {
@@ -211,7 +212,7 @@ main {
 
 footer {
     background-color: hsl(233, 26%, 24%);
-    height: 30vh;
+    height: auto;
 }
 
 .container .toplogo {
@@ -288,17 +289,96 @@ footer {
     color: #000;
 }
 
+@media screen and (min-width: 1440px) {
 
-@media screen and (min-width: 1500px) {
+    .one{
+        height: 500px;
+    }
+
+    .two{
+        height: 115vh;
+    }
+
+    .articles{
+        height: 120vh;
+    }
+
     .one .right .img2 {
-        width: 40vw;
-        position: relative;
-        top: -120vh;
-        right: -25vw;
+        overflow-x: hidden;
+        width: 500px;
+        position: absolute;
+        top: 50px;
+        right: 50px;
+    }
+
+    .one .right .img1 {
+        width: 800px;
+        position: absolute;
+        top: 13px;
+        right: 0px;
+    }
+
+    .two {
+        height: 600px;
+    }
+
+    .articles {
+        height: 650px;
+    }
+}
+@media screen and (max-width: 1440px) {
+
+    .one{
+        height: auto;
+    }
+
+    .two{
+        height: auto;
+    }
+
+    .articles{
+        height: auto;
+    }
+
+    .one .right .img2 {
+        width: 400px;
+        position: absolute;
+        top: 30px;
+        right: 20px;
+    }
+
+    .one .right .img1 {
+        width: 600px;
+        position: absolute;
+        top: 13px;
+        right: 0px;
+    }
+
+    .one .left {
+        margin-top: 10vh;
+    }
+
+}
+@media screen and (max-width: 1220px) {
+    .one .left h1 {
+        font-size: 40px;
+        font-weight: 400;
+        margin-bottom: 15px;
+    }
+
+    .articles {
+        height: auto;
+        background-color: aliceblue;
     }
 }
 
-@media screen and (max-width:376px) {
+@media screen and (min-width:601px) and (max-width:999px){
+    .boxes {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 40px;
+        gap: 20px;
+    }
 
     #navButton {
         display: block;
@@ -328,7 +408,7 @@ footer {
         flex-direction: column;
     }
 
-    .hide{
+    .hide {
         display: none;
     }
 
@@ -356,23 +436,108 @@ footer {
 
     .one {
         display: flex;
-        flex-direction: column;
-        margin-left: 7.5vw;
-        height: 80vh;
+        flex-direction: column-reverse;
     }
 
+    .one .left {
+        margin-top: 60vh;
+    }
+
+    .one .left h1 {
+        font-size: 30px;
+    }    
+
     .one .right .img1 {
-        width: 132vw;
-        position: relative;
-        top: -65vh;
-        right: 25vw;
+        /* width: 473px; */
+        height: 85vh;
+        position: absolute;
+        top: -45px;
+        right: 126px;
     }
 
     .one .right .img2 {
-        width: 81vw;
-        position: relative;
-        top: -122vh;
-        right: 0vw;
+        /* width: 329px; */
+        height: 85vh;
+        position: absolute;
+        top: -84px;
+        right: 126px;
+    }
+
+}
+
+@media screen and (max-width:600px) {
+
+    #navButton {
+        display: block;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    #navOptions {
+        width: 80vw;
+        position: absolute;
+        top: 95px;
+        left: 0px;
+        right: 30px;
+        border-radius: 5px;
+        background: #f9f9f9;
+        border: 1px solid #ccc;
+        padding: 10px;
+    }
+
+    #navOptions ul {
+        list-style-type: none;
+        padding: 0;
+        color: black;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hide {
+        display: none;
+    }
+
+    #navOptions ul li {
+        margin-bottom: 10px;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #navOptions ul li a {
+        text-decoration: none;
+        color: #333;
+    }
+
+    #navOptions ul li a:hover {
+        color: #000;
+    }
+
+    .rj {
+        display: none;
+        padding: 0px;
+        font-size: 0px;
+    }
+
+    /* .one {
+        display: flex;
+        flex-direction: column;
+        margin-left: 7.5vw;
+        height: auto;
+    }
+
+    .one .right .img1 {
+        width: 400px;
+        position: absolute;
+        top: 0px;
+    }
+
+    .one .right .img2 {
+        width: 350px;
+        position: absolute;
+        top: -130px;
     }
 
     .one .left {
@@ -383,10 +548,36 @@ footer {
         flex-direction: column;
         align-items: center;
         justify-content: center;
+    } */
+
+    .one {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .one .left {
+        margin-top: 60vh;
+    }
+   
+
+    .one .right .img1 {
+        /* width: 473px; */
+        height: 85vh;
+        position: absolute;
+        top: -45px;
+        right: 6px;
+    }
+
+    .one .right .img2 {
+        /* width: 329px; */
+        height: 85vh;
+        position: absolute;
+        top: -84px;
+        right: 48px;
     }
 
     .one .left h1 {
-        font-size: 40px;
+        font-size: 35px;
         font-weight: 400;
         margin-bottom: 15px;
     }
@@ -400,7 +591,7 @@ footer {
 
     .two {
         background-color: rgb(236, 234, 234);
-        height: 185vh;
+        height: auto;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -436,7 +627,7 @@ footer {
     }
 
     .articles {
-        height: 276vh;
+        height: auto;
         background-color: aliceblue;
     }
 
@@ -463,9 +654,9 @@ footer {
     }
 
     .card img {
-        width: 90vw;
-        height: 30vh;
-        border-radius: 5px;
+        width: auto;
+        height: auto;
+        border-radius: 15px;
     }
 
     .card h2 {
@@ -475,7 +666,7 @@ footer {
 
     footer {
         background-color: hsl(233, 26%, 24%);
-        height: 70vh;
+        height: auto;
     }
 
     .container {
