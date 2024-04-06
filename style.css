@@ -694,3 +694,34 @@ footer {
         align-items: center;
     }
 }
+
+
+.one .left{
+    animation: leftright 1s ease-out 0.5s;
+}
+
+.two .boxes .box{
+    animation: smallbig 1s ease-out 2s;
+}
+
+.cards card {
+    animation: opaq 3s ease-out 2s;
+}
+
+@keyframes leftright{
+    0%{
+        transform: translateX(-100vw);
+    }
+    100%{
+        transform: translateX(6vw);
+    }
+}
+
+@keyframes smallbig{
+    0%{
+        scale: 0;
+    }
+    100%{
+        scale: 1;
+    }
+}
